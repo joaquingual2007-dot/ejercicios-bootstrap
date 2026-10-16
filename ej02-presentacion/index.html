@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 2 · Tarjeta de presentación</title>
+
+  <!-- CSS de Bootstrap 5.3.8 (CDN) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       EJERCICIO 2 · Tarjeta de presentación
+       Objetivo: dar estilo SOLO con clases de utilidad (sin CSS propio)
+       ============================================================ -->
+
+  <!-- PASO 1: contenedor con relleno vertical (py-5), título grande (display-4)
+               y subtítulo destacado (lead)
+       - "container" → centra y pone márgenes
+       - "py-5"      → padding vertical grande (arriba y abajo)
+       - "display-4" → hace el texto mucho más grande (tipografía display)
+       - "lead"      → hace el subtítulo un poco más grande y gris
+       - "fw-bold"   → font-weight bold (negrita)
+  -->
+  <div class="container py-5">
+    <h1 class="display-4 fw-bold">Joaquín</h1>
+    <h2 class="lead">Alumno DAW · Desarrollador web en formación</h2>
+  </div>
+
+  <!-- PASO 2: separador <hr> y un párrafo con palabras resaltadas
+       - <hr>        → línea horizontal separadora
+       - "my-4"      → margen arriba y abajo (margin y)
+       - "fw-bold"   → negrita
+       - "text-primary" → color azul (el color primary de Bootstrap)
+       - "fst-italic"   → cursiva (font-style italic)
+  -->
+  <div class="container">
+    <hr class="my-4">
+    <p>Me llamo <span class="fw-bold text-primary">Joaquín</span> y estoy
+       estudiando <span class="fst-italic">Desarrollo de Aplicaciones Web</span>
+       en 2.º de DAW. Me apasiona el <span class="fw-bold">desarrollo web</span>
+       y estoy aprendiendo <span class="text-success fw-bold">Bootstrap</span>.</p>
+  </div>
+
+  <!-- PASO 3: caja de aviso con fondo suave, borde y esquinas redondeadas
+       - "bg-info-subtle"  → fondo azul clarito (sutil)
+       - "border"          → borde fino alrededor
+       - "border-info"     → el borde en color info (azul claro)
+       - "rounded-3"       → esquinas redondeadas (nivel 3)
+       - "p-3"             → padding interior por todos lados
+       - "mt-3"            → margen superior
+  -->
+  <div class="container">
+    <div class="bg-info-subtle border border-info rounded-3 p-3 mt-3">
+      <strong>💡 Dato curioso:</strong> Bootstrap fue creado por desarrolladores de Twitter
+      en 2011 y hoy es el framework CSS más usado del mundo.
+    </div>
+  </div>
+
+  <!-- PASO 4: dos botones separados con margen a la derecha (me-2)
+       - "me-2"          → margin-end (margen a la derecha) para separar los botones
+       - "btn-primary"   → botón azul sólido
+       - "btn-outline-secondary" → botón con solo borde gris
+       - "mt-4"          → margen superior
+  -->
+  <div class="container mt-4">
+    <a href="#" class="btn btn-primary me-2">Contactar</a>
+    <a href="#" class="btn btn-outline-secondary">Mi GitHub</a>
+  </div>
+
+  <!-- RETO: añade data-bs-theme="dark" a la etiqueta <html> de arriba para
+       ver cómo todo cambia automáticamente a modo oscuro. Pruébalo y quítalo. -->
+
+  <!-- Botón para volver al índice del proyecto (puedes dejarlo) -->
+  <a href="../index.html" class="btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3 z-3">← Índice</a>
+
+  <!-- JS de Bootstrap (incluye Popper). Siempre al final del body -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
